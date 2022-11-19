@@ -1,0 +1,9 @@
+@font-face {
+    font-family: caroline;
+    src: url(/fonts/coraline_cat.ttf);
+}
+  
+h2 {
+    font-family: myFirstFont;
+    color: darkgreen;
+}
