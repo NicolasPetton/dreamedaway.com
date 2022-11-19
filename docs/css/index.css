@@ -3,6 +3,12 @@
   src: url(/fonts/coraline_cat.ttf);
 }
 
+@font-face {
+  font-family: poco;
+  src: url(/fonts/poco.ttf);
+}
+
+
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
@@ -13,17 +19,22 @@
   100% { margin-top 0; }
 }
 
-body, a {
+html, body {
+  font-family: poco;
+}
+
+body {
   color: #ebede9;
+  background: #090a14;
 }
 
 a {
+  color: #e8c170;
   transition: all .5s ease-in;
   text-decoration: none;
 }
 
 a:hover {
-  color: #e8c170;
   text-shadow: 0 0 4px #e8c170;
 }
 
@@ -51,7 +62,6 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
   color: #ebede9;
   padding: 0 30px;
   font-family: caroline;
@@ -71,6 +81,7 @@ nav a:hover {
 }
 
 .side a {
+  color: #ebede9;
   padding: 0 15px;
 }
 
@@ -79,7 +90,7 @@ header {
   margin-top: 60px;
 }
 
-header h1 {
+h1 {
   font-family: caroline;
   color: #e8c170;
   font-size: 4rem;
@@ -88,12 +99,16 @@ header h1 {
   margin: 80px 0;
 }
 
-header img {
-  width: 400px;
+h2 {
+  font-family: caroline;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-shadow: 0 0 12px #ebede9;
+  margin: 40px 0;
 }
 
-body {
-  background: #090a14;
+header img {
+  width: 400px;
 }
 
 .main {
@@ -102,6 +117,7 @@ body {
 }
 
 article {
+  padding: 40px 0;
   text-align: center;
 }
 
@@ -110,13 +126,31 @@ article {
   width: 889px;
 }
 
-#links {
-  padding: 80px 0;
-}
-
 #links .steam-widget {
   width: 646px;
   height: 190px;
+  margin-bottom: 40px;
+}
+
+.platform {
+  border: 3px solid white;
+  display: inline-block;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.platform img {
+  height: 40px;
+}
+
+a.social {
+  font-size: 2rem;
+}
+
+footer {
+  font-size: 1.5rem;
+  margin: 40px;
+  text-align: center;
 }
 
 @media (max-width: 800px) {
@@ -146,5 +180,9 @@ article {
   #links .steam-widget {
     width: 420px;
     height: 220px;
+  }
+
+  .platform img {
+    height: 20px;
   }
 }
