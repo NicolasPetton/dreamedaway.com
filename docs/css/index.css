@@ -85,6 +85,10 @@ nav a:hover {
   padding: 0 15px;
 }
 
+.side a:hover {
+  color: #e8c170;
+}
+
 header {
   text-align: center;
   margin-top: 60px;
