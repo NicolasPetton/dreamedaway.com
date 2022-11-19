@@ -114,6 +114,11 @@ article {
   padding: 80px 0;
 }
 
+#links .steam-widget {
+  width: 646px;
+  height: 190px;
+}
+
 @media (max-width: 800px) {
   html {
     font-size: .8em;
@@ -138,4 +143,8 @@ article {
     width: 90%;
   }
 
+  #links .steam-widget {
+    width: 420px;
+    height: 220px;
+  }
 }
