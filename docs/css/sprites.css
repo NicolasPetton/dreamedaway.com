@@ -1,0 +1,57 @@
+:root {
+  --pixel-size: 4;
+}
+
+@media(max-width: 800px) {
+  .sprites-container {
+    display: none;
+  }
+}
+
+.sprites-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sprites {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  image-rendering: -moz-crisp-edges;
+}
+
+@keyframes spritesheet {
+   from {
+      transform: translate3d(0px,0,0)
+   }
+   to {
+      transform: translate3d(-100%,0,0)
+   }
+}
+
+.sprites .sprite {
+  z-index: 1000;
+  overflow: hidden;
+  transform: scale(var(--pixel-size));
+}
+
+.sprites .sprite .spritesheet {
+  animation: spritesheet 1s steps(4) infinite;
+}
+
+.sprites .char {
+  display: inline-block;
+}
+
+.sprites .theo {
+  animation: theo 10s;
+}
+
+.sprites .theo .sprite {
+  width: 20px;
+  height: 29px;
+}
+
+.sprites .louise .sprite {
+  width: 20px;
+  height: 27px;
+}
