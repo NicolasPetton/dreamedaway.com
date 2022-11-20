@@ -18,7 +18,9 @@
 	};
 
 	let move = (char) => {
-		char.pos = char.pos || char.initialPos;
+		if (char.pos === undefined) {
+			char.pos = char.initialPos;
+		};
 
 		char.pos += char.dir === "right" ? char.speed : -char.speed;
 		char.elt.style.transform = `translate3d(${char.pos * pixelSize}px, 0, 0)`;
