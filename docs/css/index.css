@@ -197,4 +197,8 @@ footer {
   .platform img {
     height: 20px;
   }
+
+  p {
+    width: 90%;
+  }
 }

@@ -4,7 +4,7 @@
 
 @media(max-width: 800px) {
   .sprites-container {
-    display: none;
+    /* display: none; */
   }
 }
 

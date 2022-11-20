@@ -27,7 +27,7 @@
 	};
 
 	let resetPos = (char) => {
-		let padding = window.innerWidth / 2;
+		let padding = Math.max(window.innerWidth / 2, 800);
 		if ((char.pos * pixelSize) > (window.innerWidth + padding)) {
 			char.pos = char.initialPos;
 		}
