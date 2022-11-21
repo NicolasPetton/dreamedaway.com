@@ -116,7 +116,8 @@ p {
   line-height: 1.5;
   max-width: 800px;
   text-align: left;
-  margin: 16px auto;
+  margin: 20px auto;
+  text-indent: 40px;
 }
 
 header img {
