@@ -32,6 +32,8 @@
   z-index: 1000;
   overflow: hidden;
   transform: scale(var(--pixel-size));
+  width: 19px;
+  height: 27px;
 }
 
 .sprites .sprite .spritesheet {
@@ -40,18 +42,4 @@
 
 .sprites .char {
   display: inline-block;
-}
-
-.sprites .theo {
-  animation: theo 10s;
-}
-
-.sprites .theo .sprite {
-  width: 19px;
-  height: 29px;
-}
-
-.sprites .louise .sprite {
-  width: 18px;
-  height: 27px;
 }
