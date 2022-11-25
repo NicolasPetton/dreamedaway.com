@@ -1,0 +1,47 @@
+form {
+  max-width: 800px;
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  font-size: 1.2rem;
+}
+
+form input {
+  background: transparent;
+  border: 3px solid white;
+  padding: 12px;
+  color: white;
+  border-radius: 10px;
+  transition: all .2s ease-in;
+}
+
+form input[type="text"], form input[type="email"] {
+  opacity: .5;
+  width: 100%;
+  max-width: 400px;
+}
+
+form input:focus {
+  border-color: #e8c170;
+  box-shadow: 0 0 4px #e8c170;
+  outline: none;
+  opacity: 1;
+}
+
+form input[type="submit"] {
+  background: white;
+  color: #090a14;
+  border-color: #090a14;
+  font-weight: bold;
+}
+
+form input[type="submit"]:focus {
+  background: #e8c170;
+  color: #090a14;
+  border-color: #090a14;
+  box-shadow: none;
+}

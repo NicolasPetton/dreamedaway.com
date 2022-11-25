@@ -130,7 +130,7 @@ header img {
 }
 
 article {
-  padding: 40px 0;
+  padding: 60px 0;
   text-align: center;
 }
 
@@ -145,11 +145,16 @@ article {
   margin-bottom: 40px;
 }
 
+#links {
+  background: linear-gradient(to bottom, #090a14, #490924);
+}
+
 .platform {
   border: 3px solid white;
   display: inline-block;
   border-radius: 12px;
   padding: 12px;
+  background: black;
 }
 
 .platform img {
@@ -164,6 +169,10 @@ footer {
   font-size: 1.5rem;
   margin: 40px;
   text-align: center;
+}
+
+#media {
+  background: #202e37;
 }
 
 @media (max-width: 800px) {

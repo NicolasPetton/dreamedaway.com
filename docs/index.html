@@ -25,6 +25,7 @@
 	<link rel="shortcut icon" type="image/png" href="/favicon.png"/>
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/index.css">
+	<link rel="stylesheet" href="/css/form.css">
 	<link rel="stylesheet" href="/css/grid.css">
 	<link rel="stylesheet" href="/css/sprites.css">
 	<link rel="canonical" href="https://dreamedaway.com">
@@ -55,6 +56,20 @@
 
 	<article id="trailer" class="fade-in delayed">
 	    <video src="/video/trailer.mp4" poster="/img/theo-title.png" controls> </video>
+	</article>
+
+	<article id="newsletter" class="fade-in delayed">
+	    <h2>Get news about Dreamed Away!</h2>
+	    <form action="https://sendy.pineapple.gd/subscribe" method="POST" accept-charset="utf-8">
+		<input type="email" name="email" placeholder="Email address" id="email"/>
+		<div style="display:none;">
+		    <label for="hp">HP</label><br/>
+		    <input type="text" name="hp" id="hp"/>
+		</div>
+		<input type="hidden" name="list" value="NpDvNpWK3bOrGzY3soGe9Q"/>
+		<input type="hidden" name="subform" value="yes"/>
+		<input type="submit" name="submit" id="submit" value="Subscribe" />
+	    </form>
 	</article>
 
 	<article id="links" class="fade-in delayed">
