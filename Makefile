@@ -1,6 +1,6 @@
 all: serve
 
 serve:
-	cd docs; python -m http.server
+	cd docs; python3 -m http.server
 
 .PHONY: serve

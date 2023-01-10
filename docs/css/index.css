@@ -38,6 +38,10 @@ a:hover {
   text-shadow: 0 0 4px #e8c170;
 }
 
+em {
+  font-weight: bold;
+}
+
 .fade-in {
   opacity: 0;
   animation: fadeIn 2s;
@@ -129,6 +133,33 @@ header img {
   margin: 0 auto;
 }
 
+.banner {
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: Helvetica, Arial, Sans-Serif;
+  font-size: 1.5em;
+  padding: 30px 0;
+}
+
+.banner.ks {
+  background: #05ce78;
+}
+
+.banner img {
+  height: 1em;
+  vertical-align: middle;
+}
+
+.banner a {
+  color: white;
+}
+
+.banner a:hover {
+  text-decoration: underline;
+}
+
 article {
   padding: 60px 0;
   text-align: center;
@@ -210,5 +241,19 @@ footer {
 
   p {
     width: 90%;
+  }
+}
+
+@media(min-width: 801px) {
+  .has-banner {
+    padding-top: 80px;
+  }
+
+  .banner {
+    position: fixed;
+    top: 0;
+    height: 80px;
+    width: 100%;
+    z-index: 1;
   }
 }
