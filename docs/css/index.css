@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: poco;
-  src: url(/fonts/poco.ttf);
+  font-family: dreamed_away;
+  src: url(/fonts/dreamed_away.ttf);
 }
 
 
@@ -20,7 +20,7 @@
 }
 
 html, body {
-  font-family: poco;
+  font-family: dreamed_away;
 }
 
 body {
