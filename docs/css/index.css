@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: dreamed_away;
-  src: url(/fonts/dreamed_away.ttf);
+  src: url(/fonts/poco.ttf);
 }
 
 
@@ -135,8 +135,8 @@ h2 {
 }
 
 p {
-  font-size: 1.2rem;
-  line-height: 1.8;
+  font-size: 1.6rem;
+  line-height: 1.5;
   max-width: 800px;
   text-align: left;
   margin: 20px auto;
