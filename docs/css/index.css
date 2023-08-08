@@ -1,6 +1,6 @@
 @font-face {
-  font-family: caroline;
-  src: url(/fonts/coraline_cat.ttf);
+  font-family: mountains;
+  src: url(/fonts/MountainsofChristmas-Bold.ttf);
 }
 
 @font-face {
@@ -21,11 +21,23 @@
 
 html, body {
   font-family: dreamed_away;
+  height: 100%;
 }
 
 body {
   color: #ebede9;
-  background: #090a14;
+  background-color: #090a14;
+}
+
+.bg {
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
 }
 
 a {
@@ -58,18 +70,19 @@ em {
 
 nav {
   margin: 0 auto;
-  padding: 40px 0;
+  padding: 20px 0;
   display: block;
   text-align: center;
   font-size: 1.3rem;
-  background-size: contain;
+  background: rgba(0,0,0,.5);
 }
 
 nav a {
-  color: #ebede9;
+  color: white;
   padding: 0 30px;
-  font-family: caroline;
+  font-family: mountains;
   display: inline-block;
+  font-size: 1.6rem;
 }
 
 nav a:hover {
@@ -82,10 +95,11 @@ nav a:hover {
   position: absolute;
   top: 20px;
   right: 20px;
+  padding: 20px 0;
 }
 
 .side a {
-  color: #ebede9;
+  color: white;
   padding: 0 15px;
 }
 
@@ -94,22 +108,27 @@ nav a:hover {
 }
 
 header {
-  text-align: center;
-  margin-top: 60px;
+  text-align: left;
+  padding: 0 220px;
+  max-width: 1800px;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-h1 {
-  font-family: caroline;
-  color: #e8c170;
-  font-size: 4rem;
-  line-height: 1.5;
-  text-shadow: 0 0 12px #e8c170;
-  margin: 80px 0;
+header h1 {
+  font-family: mountains;
+  color: white;
+  font-size: 10rem;
+  line-height: 1;
+  text-shadow: 0 6px 12px rgba(0,0,0,.6);
+  text-align: center;
+  display: inline-block;
 }
 
 h2 {
-  font-family: caroline;
-  font-size: 2rem;
+  font-family: mountains;
+  font-size: 4rem;
   line-height: 1.5;
   text-shadow: 0 0 12px #ebede9;
   margin: 40px 0;
@@ -228,6 +247,22 @@ footer {
   height: 100%;
 }
 
+@media (max-width: 1400px) {
+  header h1 {
+    font-size: 7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  header h1 {
+    font-size: 6rem;
+  }
+
+  header {
+    padding: 0 120px;
+  }
+}
+
 @media (max-width: 800px) {
   html {
     font-size: .8em;
@@ -239,6 +274,18 @@ footer {
 
   nav a {
     padding: 0 15px;
+  }
+
+  .side {
+    background: rgba(0,0,0,.5);
+  }
+
+  .bg, header {
+    height: 50%;
+  }
+
+  header h1 {
+    font-size: 4rem;
   }
 
   .side {
@@ -263,6 +310,28 @@ footer {
 
   p {
     width: 90%;
+  }
+}
+
+@media(max-width: 500px) {
+  .bg {
+    height: 400px;
+  }
+
+  header {
+    height: 300px;
+  }
+
+  header {
+    padding: 0 30px;
+  }
+
+  header h1 {
+    font-size: 3rem;
+  }
+
+  nav a {
+    font-size: 1.2rem;
   }
 }
 
