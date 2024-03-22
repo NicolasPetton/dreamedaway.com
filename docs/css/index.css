@@ -334,15 +334,16 @@ footer {
   }
 
   nav a {
-    padding: 0 15px;
+    padding: 0 10px;
   }
 
   .side {
     background: rgba(0,0,0,.5);
   }
 
-  .bg, header {
+  .bg.homepage, .bg.backer-portal, .homepage header, .backer-portal header {
     height: 50%;
+    min-height: 0;
   }
 
   header h1 {
@@ -379,11 +380,8 @@ footer {
     height: 400px;
   }
 
-  header {
+  .backer-portal header, .homepage header {
     height: 300px;
-  }
-
-  header {
     padding: 0 30px;
   }
 
