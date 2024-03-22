@@ -30,14 +30,34 @@ body {
 }
 
 .bg {
+  max-width: 1800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.bg.homepage {
   background-image: url(/img/background.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
+}
+
+.bg.backer-portal {
+  background-image: url(/img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 600px;
+}
+
+.backer-portal header {
+  text-align: left;
+  padding: 0 220px;
   max-width: 1800px;
-  margin: 0 auto;
-  width: 100%;
+  display: flex;
+  align-items: center;
+  min-height: 600px;
 }
 
 a {
@@ -132,6 +152,14 @@ h2 {
   line-height: 1.5;
   text-shadow: 0 0 12px #ebede9;
   margin: 40px 0;
+}
+
+h3 {
+  font-family: mountains;
+  font-size: 2rem;
+  line-height: 1.5;
+  text-shadow: 0 0 12px #ebede9;
+  margin: 20px 0;
 }
 
 p {
@@ -245,6 +273,39 @@ footer {
   bottom: 0;
   width: 100%;
   height: 100%;
+}
+
+#ks-link {
+  background: #05ce78;
+  padding: 30px;
+  font-family: mountains;
+  font-size: 2rem;
+}
+
+#ks-link a {
+  color: white;
+}
+
+#ks-link a:hover {
+  text-decoration: underline;
+}
+
+
+#backer {
+  background: #202e37;
+}
+
+#backer img {
+  max-width: 600px;
+}
+
+
+#rewards {
+  background: linear-gradient(to bottom, #090a14, #0e2d44);
+}
+
+#rewards img {
+  max-width: 600px;
 }
 
 @media (max-width: 1400px) {

@@ -2,9 +2,16 @@ form {
   max-width: 800px;
   text-align: center;
   margin: 0 auto;
+}
+
+form.newsletter {
   display: flex;
   justify-content: center;
   width: 90%;
+}
+
+form.backer table {
+  margin: 10px auto;
 }
 
 form input {
