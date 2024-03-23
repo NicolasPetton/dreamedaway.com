@@ -20,7 +20,7 @@
 }
 
 html, body {
-  font-family: dreamed_away;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 100%;
 }
 
@@ -163,7 +163,7 @@ h3 {
 }
 
 p {
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   line-height: 1.5;
   max-width: 800px;
   text-align: left;
