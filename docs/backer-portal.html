@@ -28,6 +28,7 @@
 	<link rel="stylesheet" href="/css/form.css">
 	<link rel="stylesheet" href="/css/grid.css">
 	<link rel="stylesheet" href="/css/sprites.css">
+	<link rel="stylesheet" href="/css/backer_portal.css">
 	<link rel="canonical" href="https://dreamedaway.com">
 	<script src="https://kit.fontawesome.com/c2672f2a5c.js" crossorigin="anonymous"></script>
     </head>
@@ -58,50 +59,157 @@
 	    </header>
 	</div>
 
-	<article class="fade-in">
+	<article id="backer" class="fade-in">
+	    <h2>Choose a reward tier</h2>
+
 	    <p>
 		Our <a href="https://www.kickstarter.com/projects/1680398230/dreamed-away">Kickstarer</a> campaign ended in February 2024. We have since opened this backer portal for players who missed out on the campaign.
 	    </p>
-	</article>
 
-	<article id="ks-link">
-	    <a href="https://www.kickstarter.com/projects/1680398230/dreamed-away">Check out our tiers on Kickstarter! 👉</a>
-	</article>
-
-	<article id="backer" class="fade-in">
-	    <h2>Choose a reward tier</h2>
 
 	    <p>
 		We are using PayPal for payment processing. Reward fullfilment and shipping costs are the same as during the Kickstarter campaign.
 	    </p>
 
-	    <form class="backer"  method="post" target="_top">
-		<table>
-		    <tbody><tr>
-			<td>
-			    <input type="hidden" name="on0" value="Choose your Digital Tier:">
-			</td>
-		    </tr>
-		    <tr>
-			<td>
-			    <select name="os0">
-				<option value="Player">
-				    (Digital) Supporter 5.00 €
-				</option>
-				<option value="Player">
-				    (Digital) Player 20.00 €
-				</option>
-			    </select>
-			</td>
-		    </tr>
-		    </tbody>
-		</table>
-		<input type="hidden" name="currency_code" value="USD">
-		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now">
-	    </form>
+	    <!-- <form class="backer"  method="post" target="_top">
+		 <table>
+		 <tbody><tr>
+		 <td>
+		 <input type="hidden" name="on0" value="Choose your Digital Tier:">
+		 </td>
+		 </tr>
+		 <tr>
+		 <td>
+		 <select name="os0">
+		 <option value="Player">
+		 (Digital) Supporter 5.00 &nbsp;€
+		 </option>
+		 <option value="Player">
+		 (Digital) Player 20.00 &nbsp;€
+		 </option>
+		 </select>
+		 </td>
+		 </tr>
+		 </tbody>
+		 </table>
+		 <input type="hidden" name="currency_code" value="USD">
+		 <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_paynowCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Buy Now">
+		 </form> -->
 
-	    <!-- <img src="/img/tiers_with_labels.png"/> -->
+	    <div class="rewards">
+		<a class="reward">
+		    <div class="body">
+			<div class="heading">
+			    <h3>Supporter</h3>
+			    <h4>5&nbsp;€</h4>
+			</div>
+			<ul>
+			    <li>Name in the credits</li>
+			    <li>Digital wallpaper</li>
+			    <li>“Supporter” Discord role</li>
+			</ul>
+		    </div>
+		    <div class="delivery"><h4>Estimated delivery</h4><span>Feb 2025</span></div>
+		</a>
+		<a class="reward">
+		    <div class="body">
 
+			<div class="heading">
+			    <h3>Player</h3>
+			    <h4>20&nbsp;€</h4>
+			</div>
+			<ul>
+			    <li>Digital copy of the game</li>
+			    <li>Name in the credits</li>
+			    <li>Digital wallpaper</li>
+			    <li>“Supporter” Discord role</li>
+			</ul>
+		    </div>
+		    <div class="delivery"><h4>Estimated delivery</h4><span>Feb 2025</span></div>
+		</a>
+		<a class="reward">
+		    <div class="body">
+			<div class="heading">
+			    <h3>Deluxe Player</h3>
+			    <h4>35&nbsp;€</h4>
+			</div>
+			<ul>
+			    <li class="two">Digital copy of the game</li>
+			    <li>Digital Original Soundtrack</li>
+			    <li>Name in the credits</li>
+			    <li>Digital wallpaper</li>
+			    <li>“Supporter” Discord role</li>
+			</ul>
+		    </div>
+		    <div class="delivery"><h4>Estimated delivery</h4><span>Feb 2025</span></div>
+		</a>
+		<a class="reward">
+		    <div class="body">
+			<div class="heading">
+			    <h3>Beta Tester</h3>
+			    <h4>50&nbsp;€</h4>
+			</div>
+			<ul>
+			    <li>Early Access to builds of the game</li>
+			    <li class="two">Digital copy of the game</li>
+			    <li>Digital Original Soundtrack</li>
+			    <li>Name in the credits</li>
+			    <li>Digital wallpaper</li>
+			    <li>“Supporter” Discord role</li>
+			</ul>
+		    </div>
+		    <div class="delivery"><h4>Estimated delivery</h4><span>Feb 2025</span></div>
+		</a>
+		<a class="reward">
+		    <div class="body">
+			<div class="heading">
+			    <h3>Physical Edition</h3>
+			    <h4>65&nbsp;€</h4>
+			</div>
+			<ul>
+			    <li>Physical copy of the game</li>
+			    <li>Early Access to builds of the game</li>
+			    <li class="two">Digital copy of the game</li>
+			    <li>Digital Original Soundtrack</li>
+			    <li>Name in the credits</li>
+			    <li>Digital wallpaper</li>
+			    <li>“Supporter” Discord role</li>
+			</ul>
+		    </div>
+		    <div class="delivery">
+			<h4>Estimated delivery</h4>
+			<span>Feb 2025</span>
+		    </div>
+		</a>
+		<a class="reward">
+		    <div class="body">
+			<div class="heading">
+			    <h3>Deluxe Physical Edition</h3>
+			    <h4>100&nbsp;€</h4>
+			</div>
+			<ul>
+			    <li>Physical copy of the game</li>
+			    <li>Physical OST</li>
+			    <li>Pin</li>
+			    <li>Poster</li>
+			    <li>Early Access to builds of the game</li>
+			    <li class="two">Digital copy of the game</li>
+			    <li>Digital Original Soundtrack</li>
+			    <li>Name in the credits</li>
+			    <li>Digital wallpaper</li>
+			    <li>“Supporter” Discord role</li>
+			</ul>
+		    </div>
+		    <div class="delivery">
+			<h4>Estimated delivery</h4>
+			<span>Feb 2025</span>
+		    </div>
+		</a>
+	    </div>
+	</article>
+
+	<article id="ks-link">
+	    <a href="https://www.kickstarter.com/projects/1680398230/dreamed-away">Check out our tiers on Kickstarter! 👉</a>
 	</article>
 
 	<article id="rewards">

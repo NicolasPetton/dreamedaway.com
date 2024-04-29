@@ -292,7 +292,7 @@ footer {
 
 
 #backer {
-  background: #202e37;
+  background: linear-gradient(to bottom, #090a14, #0e2d44);
 }
 
 #backer img {
@@ -301,7 +301,7 @@ footer {
 
 
 #rewards {
-  background: linear-gradient(to bottom, #090a14, #0e2d44);
+  background: linear-gradient(to bottom, #090a14, #312233);
 }
 
 #rewards img {
@@ -373,6 +373,11 @@ footer {
   p {
     width: 90%;
   }
+
+  #rewards img {
+    max-width: 100%;
+  }
+
 }
 
 @media(max-width: 500px) {

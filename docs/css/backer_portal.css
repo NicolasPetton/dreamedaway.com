@@ -1,0 +1,90 @@
+
+.rewards {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 40px 20px 0 20px;
+  gap: 30px;
+}
+
+.rewards .reward {
+  border: 1px solid #a6afb5aa;
+  box-shadow: 0 2px 24px 0 #132029;
+  border-radius: 8px;
+  background: #253e4f;
+  color: #ebede9;
+  padding: 0 14px 10px 14px;
+  width: 300px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: .9em;
+  line-height: 1.3em;
+
+  cursor: pointer;
+  transition: all ease-in .2s;
+  box-shadow: 0 2px 24px 4px  #132029;
+}
+
+.rewards .reward:hover {
+  border: 1px solid white;
+  background: #3e6071;
+  color: white;
+  text-shadow: none;
+  transform: translateY(-8px);
+}
+
+.rewards .heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 10px 5px 20px 5px;
+}
+
+.rewards h3 {
+  text-shadow: none;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1.5em;
+  line-height: 1.5em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.rewards h4 {
+  font-size: 1.5em;
+  margin: 0;
+  line-height: 1.5em;
+  opacity: .6;
+}
+
+.rewards ul {
+  text-align: left;
+  margin-left: 20px;
+  line-height: 1.8em;
+  font-size: 1.1em;
+}
+
+.rewards li:before {
+  content: "×1";
+  margin-right: 8px;
+  opacity: 0.4;
+  font-weight: bold;
+}
+
+.rewards li.two:before {
+  content: "×2";
+  margin-right: 8px;
+  opacity: 0.4;
+}
+
+
+.reward .delivery {
+  font-size: .9em;
+}
+
+.reward .delivery h4 {
+  font-size: .9em;
+  font-weight: bold;
+}
