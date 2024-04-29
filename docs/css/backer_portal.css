@@ -40,7 +40,7 @@
   display: flex;
   justify-content: space-between;
   gap: 30px;
-  margin: 10px 5px 20px 5px;
+  margin: 10px 5px 30px 5px;
 }
 
 .rewards h3 {
@@ -64,6 +64,10 @@
   margin-left: 20px;
   line-height: 1.8em;
   font-size: 1.1em;
+}
+
+.rewards li.new {
+  font-weight: bold;
 }
 
 .rewards li:before {
