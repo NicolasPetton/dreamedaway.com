@@ -29,7 +29,7 @@
 }
 
 .rewards .reward:hover {
-  border-color white;
+  border: 1px solid white;
   background: #3e6071;
   color: white;
   text-shadow: none;
