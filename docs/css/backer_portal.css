@@ -24,16 +24,16 @@
   line-height: 1.3em;
 
   cursor: pointer;
-  transition: all ease-in .2s;
+  transition: all ease-in .15s;
   box-shadow: 0 2px 24px 4px  #132029;
 }
 
 .rewards .reward:hover {
-  border: 1px solid white;
+  border-color white;
   background: #3e6071;
   color: white;
   text-shadow: none;
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
 .rewards .heading {
@@ -90,5 +90,12 @@
 
 .reward .delivery h4 {
   font-size: .9em;
+  font-weight: bold;
+}
+
+h3.contact {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+  margin: 40px 0;
+  text-shadow: none;
   font-weight: bold;
 }
