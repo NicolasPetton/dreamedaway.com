@@ -48,7 +48,7 @@
   font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 1.5em;
   line-height: 1.5em;
-  font-weight: bold;
+  opacity: .6;
   margin: 0;
 }
 
@@ -56,7 +56,7 @@
   font-size: 1.5em;
   margin: 0;
   line-height: 1.5em;
-  opacity: .6;
+  font-weight: bold;
 }
 
 .rewards ul {
@@ -162,11 +162,11 @@ h3.contact {
   margin: 15px;
   display: flex;
   justify-content: center;
-  gap: 30px;
 }
 
 #dialog .flags a {
   cursor: pointer;
+  padding: 0 15px;
 }
 
 #dialog .flags a img {
