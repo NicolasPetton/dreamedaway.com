@@ -94,8 +94,99 @@
 }
 
 h3.contact {
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 40px 0;
   text-shadow: none;
   font-weight: bold;
+}
+
+#dialog {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: auto;
+}
+
+#dialog .close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#dialog .close:hover,
+#dialog .close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#dialog.visible {
+  display: block;
+  background-color: #000000cc;
+}
+
+#dialog .content {
+  border: 1px solid #a6afb5aa;
+  box-shadow: 0 2px 24px 0 #132029;
+  border-radius: 8px;
+  color: #090a14;
+  background: #ebede9;
+  border-radius: 8px;
+  margin: 15% auto;
+  padding: 40px 40px;
+  width: 80%;
+  max-width: 800px;
+  text-align: center;
+}
+
+#dialog .content h3 {
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, Aptos, Roboto, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+  font-size: 1.8em;
+  margin: 0;
+}
+
+#dialog .content p {
+  opacity: .6;
+  margin: 0;
+  text-align: center;
+  max-width: none;
+}
+
+#dialog .flags {
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+#dialog .flags a {
+  cursor: pointer;
+}
+
+#dialog .flags a img {
+  transition: all ease-in .15s
+}
+
+#dialog .flags a:hover img {
+  scale: 1.2;
+}
+
+#dialog .flags img {
+  width: 60px;
+}
+
+#dialog .legend span {
+  display: none;
+  opacity: .6;
+  font-weight: bold;
+}
+
+#dialog .legend span.visible {
+  display: block;
 }
