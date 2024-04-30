@@ -130,7 +130,7 @@ h3.contact {
   top: 0;
   bottom: 0;
   overflow: auto;
-  background-color: #000000aa;
+  background-color: #00000088;
 }
 
 #dialog.visible {
@@ -154,7 +154,7 @@ h3.contact {
 
 #dialog .content {
   border: 1px solid #a6afb5aa;
-  box-shadow: 0 2px 24px 0 #132029;
+  box-shadow: 0 2px 24px 10px #111;
   border-radius: 8px;
   color: #090a14;
   background: #ebede9;
