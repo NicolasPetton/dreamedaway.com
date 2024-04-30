@@ -10,6 +10,16 @@
   }
 }
 
+@keyframes fade-in {
+  0%   {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 .rewards {
   display: flex;
   flex-wrap: wrap;
@@ -125,6 +135,7 @@ h3.contact {
 
 #dialog.visible {
   display: block;
+  animation: fade-in .3s;
 }
 
 #dialog .close {
