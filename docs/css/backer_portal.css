@@ -1,3 +1,14 @@
+@keyframes pop {
+  0%   {
+    transform: scale(0.8);
+  }
+  80% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 
 .rewards {
   display: flex;
@@ -109,6 +120,11 @@ h3.contact {
   top: 0;
   bottom: 0;
   overflow: auto;
+  background-color: #000000aa;
+}
+
+#dialog.visible {
+  display: block;
 }
 
 #dialog .close {
@@ -125,11 +141,6 @@ h3.contact {
   cursor: pointer;
 }
 
-#dialog.visible {
-  display: block;
-  background-color: #000000cc;
-}
-
 #dialog .content {
   border: 1px solid #a6afb5aa;
   box-shadow: 0 2px 24px 0 #132029;
@@ -142,6 +153,10 @@ h3.contact {
   width: 80%;
   max-width: 800px;
   text-align: center;
+}
+
+#dialog.visible .content {
+  animation: pop .15s;
 }
 
 #dialog .content h3 {
