@@ -1,6 +1,6 @@
 @keyframes pop {
   0%   {
-    transform: scale(0.8);
+    transform: scale(0.9);
   }
   80% {
     transform: scale(1.05);
@@ -130,11 +130,22 @@ h3.contact {
   top: 0;
   bottom: 0;
   overflow: auto;
-  background-color: #00000088;
 }
 
 #dialog.visible {
   display: block;
+}
+
+#dialog .overlay {
+  background-color: #00000088;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#dialog.visible .overlay {
   animation: fade-in .3s;
 }
 
@@ -152,6 +163,18 @@ h3.contact {
   cursor: pointer;
 }
 
+#dialog .main {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #dialog .content {
   border: 1px solid #a6afb5aa;
   box-shadow: 0 2px 24px 10px #111;
@@ -159,7 +182,6 @@ h3.contact {
   color: #090a14;
   background: #ebede9;
   border-radius: 8px;
-  margin: 15% auto;
   padding: 30px 40px;
   width: 80%;
   max-width: 800px;
