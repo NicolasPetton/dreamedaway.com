@@ -120,6 +120,8 @@ h3.contact {
   margin: 40px 0;
   text-shadow: none;
   font-weight: bold;
+  max-width: 800px;
+  margin: 20px auto;
 }
 
 #dialog {
