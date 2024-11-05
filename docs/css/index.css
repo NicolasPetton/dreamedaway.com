@@ -310,11 +310,11 @@ footer {
 
 @media (max-width: 1400px) {
   header h1 {
-    font-size: 7rem;
+    font-size: 8rem;
   }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1000px) {
   header h1 {
     font-size: 6rem;
   }
