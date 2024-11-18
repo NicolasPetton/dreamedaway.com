@@ -125,6 +125,7 @@ header .platforms {
 
 .platform img {
   height: 40px;
+  width: auto;
 }
 
 .mobile-nav {
