@@ -29,37 +29,6 @@ body {
   background-color: #090a14;
 }
 
-.bg {
-  max-width: 1800px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.bg.homepage {
-  background-image: url(/img/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.bg.backer-portal {
-  background-image: url(/img/background.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 600px;
-}
-
-.backer-portal header {
-  text-align: left;
-  padding: 0 220px;
-  max-width: 1800px;
-  display: flex;
-  align-items: center;
-  min-height: 600px;
-}
-
 a {
   color: #e8c170;
   transition: all .5s ease-in;
@@ -95,6 +64,10 @@ nav {
   text-align: center;
   font-size: 1.3rem;
   background: rgba(0,0,0,.5);
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  right: 0;
 }
 
 nav a {
@@ -105,45 +78,86 @@ nav a {
   font-size: 1.6rem;
 }
 
+nav .socials a {
+  padding: 0 10px;
+}
+
 nav a:hover {
   color: #e8c170;
   text-shadow: 0 0 12px #e8c170;
 }
 
-.side {
-  font-size: 1.5rem;
+header {
+  position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+header .bars {
+  font-size: 2em;
+  padding: 4px 8px;
+  background: #090a14;
+  border: 4px solid #e8c170;
+  border-radius: 4px;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 10;
+  cursor: pointer;
+  display: none;
+}
+
+header img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header .platforms {
   position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+.platform {
+  display: inline-block;
+  padding: 10px;
+}
+
+.platform img {
+  height: 40px;
+}
+
+.mobile-nav {
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  right: 0;
   top: 0;
-  right: 20px;
+  bottom: 0;
+  background: #090a14ee;
+  display: none;
+  opacity: 0;
+}
+
+.mobile-nav .menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+  font-size: 3em;
+  font-weight: bold;
+  font-family: mountains;
+}
+
+.mobile-nav .menu > * {
   padding: 20px 0;
 }
 
-.side a {
-  color: white;
-  padding: 0 15px;
-}
-
-.side a:hover {
-  color: #e8c170;
-}
-
-header {
-  text-align: left;
-  padding: 0 220px;
-  max-width: 1800px;
-  display: flex;
-  align-items: center;
-  height: 100%;
-}
-
-header h1 {
-  font-family: mountains;
-  color: white;
-  font-size: 10rem;
-  line-height: 1;
-  text-shadow: 0 6px 12px rgba(0,0,0,.6);
-  text-align: center;
-  display: inline-block;
+.mobile-nav.active {
+  display: block;
+  opacity: 1;
+  animation: fadeIn .3s;
+  animation-fill-mode: forwards;
 }
 
 h2 {
@@ -169,10 +183,6 @@ p {
   text-align: left;
   margin: 20px auto;
   /* text-indent: 40px; */
-}
-
-header img {
-  width: 400px;
 }
 
 .main {
@@ -212,6 +222,12 @@ article {
   text-align: center;
 }
 
+article.socials {
+  padding: 20px 0;
+  /* margin-bottom: -40px; */
+  font-size: 2em;
+}
+
 #trailer video {
   height: 500px;
   width: 889px;
@@ -225,18 +241,6 @@ article {
 
 #links {
   background: linear-gradient(to bottom, #090a14, #0e2d44);
-}
-
-.platform {
-  border: 3px solid white;
-  display: inline-block;
-  border-radius: 12px;
-  padding: 12px;
-  background: black;
-}
-
-.platform img {
-  height: 40px;
 }
 
 a.social {
@@ -256,6 +260,8 @@ footer {
 .youtube-container {
   max-width: 900px;
   margin: auto;
+  border: 6px solid #e8c170;
+  border-radius: 8px;
 }
 
 .youtube {
@@ -308,52 +314,17 @@ footer {
   max-width: 600px;
 }
 
-@media (max-width: 1400px) {
-  header h1 {
-    font-size: 8rem;
-  }
-}
-
 @media (max-width: 1000px) {
-  header h1 {
-    font-size: 6rem;
-  }
-
-  header {
-    padding: 0 120px;
-  }
-}
-
-@media (max-width: 800px) {
   html {
     font-size: .8em;
   }
 
-  nav {
-    font-size: 1rem;
+  header .bars {
+    display: inline;
   }
 
-  nav a {
-    padding: 0 10px;
-  }
-
-  .side {
-    background: rgba(0,0,0,.5);
-  }
-
-  .bg.homepage, .bg.backer-portal, .homepage header, .backer-portal header {
-    height: 50%;
-    min-height: 0;
-  }
-
-  header h1 {
-    font-size: 4rem;
-  }
-
-  .side {
-    display: block;
-    position: initial;
-    text-align: center;
+  header nav {
+    display: none;
   }
 
   #trailer video {
@@ -377,38 +348,18 @@ footer {
   #rewards img {
     max-width: 100%;
   }
-
 }
 
-@media(max-width: 500px) {
-  .bg {
-    height: 400px;
+@media (max-width: 500px) {
+  /* html { */
+  /*   font-size: .6em; */
+  /* } */
+
+  header img {
+    height: 500px;
   }
 
-  .backer-portal header, .homepage header {
-    height: 300px;
-    padding: 0 30px;
-  }
-
-  header h1 {
-    font-size: 3rem;
-  }
-
-  nav a {
-    font-size: 1.2rem;
-  }
-}
-
-@media(min-width: 801px) {
-  .has-banner {
-    padding-top: 80px;
-  }
-
-  .banner {
-    position: fixed;
-    top: 0;
-    height: 80px;
-    width: 100%;
-    z-index: 1;
+  article {
+    padding: 30px 0;
   }
 }
