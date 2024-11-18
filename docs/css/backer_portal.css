@@ -23,6 +23,7 @@
 .rewards {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   max-width: 1000px;
   margin: 30px auto;
   padding: 40px 20px 0 20px;
@@ -240,4 +241,10 @@ h3.contact {
 
 #dialog .legend span.visible {
   display: block;
+}
+
+@media (max-width: 500px) {
+  .rewards .reward {
+    width: 100%;
+  }
 }
