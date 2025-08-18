@@ -8,6 +8,19 @@
   src: url(/fonts/poco.ttf);
 }
 
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
 
 @keyframes fadeIn {
   0% { opacity: 0; }
@@ -216,6 +229,24 @@ p {
 
 .banner a:hover {
   text-decoration: underline;
+}
+
+.banner.release-date {
+  background: #ffb459;
+  font-family: "Mountains Of Christmas";
+  font-size: 3em;
+  font-weight: bold;
+}
+
+.banner.release-date a {
+  color: black;
+  text-decoration: underline;
+  display: inline-block;
+}
+
+.banner.release-date a:hover {
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
 
 article {
