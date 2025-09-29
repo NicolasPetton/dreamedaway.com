@@ -95,6 +95,10 @@ nav .socials a {
   padding: 0 10px;
 }
 
+nav .socials img {
+  height: 22px;
+}
+
 nav a:hover {
   color: #e8c170;
   text-shadow: 0 0 12px #e8c170;
