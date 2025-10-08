@@ -389,6 +389,10 @@ footer {
     display: none;
   }
 
+  .platform {
+    padding: 12px;
+  }
+
   #trailer video {
     height: auto;
     width: 90%;
