@@ -27,6 +27,11 @@
   100% { opacity: 1; }
 }
 
+@keyframes zoom {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
 @keyframes slide {
   0% { margin-top: -100px; }
   100% { margin-top 0; }
@@ -137,7 +142,27 @@ header .platforms {
 
 .platform {
   display: inline-block;
-  padding: 10px;
+  padding: 22px;
+  border: 3px solid white;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+.platform:hover {
+  animation: zoom .2s;
+  animation-fill-mode: forwards;
+}
+
+.platform.switch {
+  background: #e40016;
+}
+
+.platform.xbox {
+  background: #0f7315;
+}
+
+.platform.steam {
+  background: #182535;
 }
 
 .platform img {
@@ -215,7 +240,7 @@ p {
   color: white;
   font-family: Helvetica, Arial, Sans-Serif;
   font-size: 1.5em;
-  padding: 30px 0;
+  padding: 15px 0;
 }
 
 .banner.ks {
