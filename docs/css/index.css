@@ -283,6 +283,10 @@ article {
   text-align: center;
 }
 
+article#platforms {
+  padding-top: 0;
+}
+
 article.socials {
   padding: 20px 0;
   /* margin-bottom: -40px; */
