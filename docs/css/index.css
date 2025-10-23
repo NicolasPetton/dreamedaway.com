@@ -165,6 +165,10 @@ header .platforms {
   background: #182535;
 }
 
+.platform.gog {
+  background: #790cd0;
+}
+
 .platform img {
   height: 40px;
   width: auto;
